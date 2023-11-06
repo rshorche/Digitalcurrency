@@ -1,0 +1,16 @@
+:root {
+  --white: #ffffff;
+  --blue: #3b82f6;
+  --black: #1f2937;
+  --gray: #9da2ab;
+  --light-gray: #f3f4f6;
+}
+
+body {
+  background-color: var(--white);
+  font-family: yekan;
+  font-size: 14px;
+}
+button {
+  font-family: yekan;
+}

@@ -1,0 +1,145 @@
+/*                                                 CurrencyList  */
+.CurrencyList {
+  margin-top: 100px !important;
+  display: flex;
+  flex-direction: column;
+  margin: 80px auto;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 10px;
+  border-radius: 12px;
+}
+/*                                                 CurrencyList top */
+.CurrencyList-top {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.CurrencyList-top-Title {
+  font-size: 25px;
+}
+.CurrencyList-top-btns {
+  background-color: var(--light-gray);
+  padding: 15px 0;
+  margin: 10px;
+  border-radius: 5px;
+}
+.CurrencyList-top-btn {
+  padding: 5px 30px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transform: translateX(100px);
+  transition: all 0.5s;
+}
+.CurrencyList-top-btn-active {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-color: var(--white);
+}
+
+/*                                                 CurrencyList bottom */
+.CurrencyList-bottom {
+  background-color: var(--white);
+  padding: 15px;
+  border-radius: 12px;
+}
+
+/*                                            CurrencyList crypto title */
+.CurrencyList-bottom-titles {
+  background-color: var(--light-gray);
+  padding: 15px 10px;
+  border-radius: 12px;
+  font-weight: 900;
+  color: var(--black);
+  display: flex;
+  justify-content: space-between;
+}
+.CurrencyList-bottom-titles span {
+}
+.CurrencyList-bottom-titles-lastPrice {
+}
+.CurrencyList-bottom-titles-changeDay {
+  display: none;
+}
+.CurrencyList-bottom-titles-week {
+  display: none;
+}
+
+/*                                             CurrencyList crypto list */
+.CurrencyList-bottom-crypto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--black);
+  border-radius: 12px;
+  margin: 10px 20px 0;
+  transition: all 0.4s;
+}
+.CurrencyList-bottom-crypto:hover {
+  background-color: var(--light-gray);
+  padding-right: 15px;
+}
+.CurrencyList-bottom-crypto-icon img {
+  width: 40px;
+}
+.CurrencyList-bottom-crypto-name {
+}
+.CurrencyList-bottom-crypto-price {
+}
+
+canvas {
+  height: 60px !important;
+  width: 200px !important;
+}
+.CurrencyList-bottom-crypto-change {
+  display: none;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  direction: ltr;
+}
+.CurrencyList-bottom-crypto-change-red {
+  background-color: #fcdada;
+  color: #f26161;
+}
+.CurrencyList-bottom-crypto-change-green {
+  background-color: #d3f3df;
+  color: #2ec867;
+}
+.CurrencyList-bottom-crypto-charts {
+  display: none;
+  align-items: center;
+}
+.CurrencyList-bottom-crypto-chart {
+  width: 200px;
+  height: 70px;
+}
+.CurrencyList-bottom-crypto-btn {
+  background-color: var(--light-gray);
+  color: var(--black);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 0 10px;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.CurrencyList-bottom-more {
+  font-size: 18px;
+  max-width: 300px;
+  margin: 40px auto 20px;
+  padding: 10px 20px;
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.CurrencyList-coinLlists{
+  overflow-y: scroll;
+  max-height: 500px;
+}

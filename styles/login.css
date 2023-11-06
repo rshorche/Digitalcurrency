@@ -1,0 +1,172 @@
+.form-c {
+margin-top: 120px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-height: 100vh;
+  min-height: 80vh;
+  text-align: center;
+}
+.form-c h1 {
+  font-weight: bold;
+  margin: 0;
+}
+.form-container button {
+  margin: 15px 0 0 !important;
+}
+.form-container h1 {
+  margin: 0 0 15px !important;
+}
+
+.form-c p {
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+  margin: 20px 0 30px;
+  color: var(--light-gray);
+}
+
+.form-c a {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 50px 0;
+}
+.form {
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+}
+.form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+.form-container form {
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.form-container input {
+  background: var(--light-gray);
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+  border-radius: 5px;
+}
+.form-container input:focus {
+  outline: none;
+}
+.form-c button {
+  border-radius: 10px;
+  border: 1px solid var(--blue);
+  background: var(--blue);
+  color: var(--white);
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+.form-c button:active {
+  transform: scale(0.95);
+}
+
+.form-c button:focus {
+  outline: none;
+}
+
+.form-c button.ghost {
+  background: transparent;
+  border-color: var(--white);
+}
+
+.form-singup {
+  left: 0;
+  width: 50%;
+  z-index: 1;
+  opacity: 0;
+}
+.form-singin {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+.form-overly {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  z-index: 50;
+}
+.overlay {
+  background: var(--blue);
+  color: var(--white);
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateX(50%);
+  transition: transform 0.6s ease-in-out;
+}
+.overlay-panel {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  height: 100%;
+  width: 40%;
+  text-align: center;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+.overlay-left {
+  transform: translateX(-120%);
+}
+.overlay-right {
+  right: 0;
+  transform: translateX(-10%);
+}
+.form-c.right-panel-active .form-singin {
+  transform: translateX(100%);
+}
+.form-c.right-panel-active .form-overly {
+  transform: translateX(-100%);
+}
+.form-c.right-panel-active .form-singup {
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+}
+.form-c.right-panel-active .overlay {
+  transform: translateX(50%);
+}
+
+.form-c.right-panel-active .overlay-left {
+  transform: translateX(-10%);
+}
+
+.form-c.right-panel-active .overlay-right {
+  transform: translateX(220%);
+}

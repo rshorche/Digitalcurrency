@@ -1,0 +1,335 @@
+/*                                                      main */
+.main {
+  margin-top: 160px;
+}
+/*                                                 section 1 */
+.section1 {
+}
+.section1-title {
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 35px;
+}
+.section1-desc {
+  margin: 30px 0 30px 0;
+  line-height: 20px;
+  font-size: 15px;
+  color: var(--gray);
+}
+.section1-btn {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+}
+.section1-img {
+  width: 100%;
+}
+
+/*                                                 section 2 */
+.section2 {
+  display: flex;
+  flex-direction: column;
+  margin: 80px auto;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 10px;
+  border-radius: 12px;
+}
+/*                                                 section 2 top */
+.section2-top {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.section2-top-Title {
+  font-size: 25px;
+}
+.section2-top-btns {
+  background-color: var(--light-gray);
+  padding: 15px 0;
+  margin: 10px;
+  border-radius: 5px;
+}
+.section2-top-btn {
+  padding: 5px 30px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transform: translateX(100px);
+  transition: all 0.5s;
+}
+.section2-top-btn-active {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-color: var(--white);
+}
+
+/*                                                 section 2 bottom */
+.section2-bottom {
+  background-color: var(--white);
+  padding: 15px;
+  border-radius: 12px;
+}
+
+/*                                            section 2 crypto title */
+.section2-bottom-titles {
+  background-color: var(--light-gray);
+  padding: 15px 10px;
+  border-radius: 12px;
+  font-weight: 900;
+  color: var(--black);
+  display: flex;
+  justify-content: space-between;
+}
+.section2-bottom-titles span {
+}
+.section2-bottom-titles-lastPrice {
+}
+.section2-bottom-titles-changeDay {
+  display: none;
+}
+.section2-bottom-titles-week {
+  display: none;
+}
+
+/*                                             section 2 crypto list */
+.section2-bottom-crypto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--black);
+  border-radius: 12px;
+  margin: 10px 20px 0;
+  transition: all 0.4s;
+}
+.section2-bottom-crypto:hover {
+  background-color: var(--light-gray);
+  padding-right: 15px;
+}
+.section2-bottom-crypto-icon img {
+  width: 40px;
+}
+.section2-bottom-crypto-name {
+}
+.section2-bottom-crypto-price {
+}
+
+canvas {
+  height: 60px !important;
+  width: 200px !important;
+}
+.section2-bottom-crypto-change {
+  display: none;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  direction: ltr;
+}
+.section2-bottom-crypto-change-red {
+  background-color: #fcdada;
+  color: #f26161;
+}
+.section2-bottom-crypto-change-green {
+  background-color: #d3f3df;
+  color: #2ec867;
+}
+.section2-bottom-crypto-charts {
+  display: none;
+  align-items: center;
+}
+.section2-bottom-crypto-chart {
+  width: 200px;
+  height: 70px;
+}
+.section2-bottom-crypto-btn {
+  background-color: var(--light-gray);
+  color: var(--black);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 0 10px;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.section2-bottom-more {
+  font-size: 18px;
+  max-width: 300px;
+  margin: 40px auto 20px;
+  padding: 10px 20px;
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/*                                                 section 3 */
+
+.section3 {
+}
+.section3-box {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 20px;
+  flex-direction: column;
+  border-radius: 12px;
+}
+.section3-box-coin {
+}
+.section3-box-inputCoin {
+  width: 60%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--light-gray);
+  outline: none;
+  text-align: center;
+}
+.section3-box-inputCoinIcon {
+  width: 30%;
+  margin: 10px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--light-gray);
+  outline: none;
+  text-align: center;
+}
+.section3-box-coin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  direction: ltr;
+}
+.section3-box-inputToman {
+  width: 60%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--light-gray);
+  outline: none;
+  text-align: center;
+}
+.section3-box-inputTomanIcon {
+  width: 30%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--light-gray);
+  outline: none;
+  text-align: center;
+}
+
+.section3-box-btn {
+  border: none;
+  background-color: var(--blue);
+  color: var(--white);
+  margin: 10px;
+  padding: 5px 20px;
+  font-size: 15px;
+  border-radius: 12px;
+}
+.section3-box-result {
+  margin: 10px;
+  font-size: 15px;
+}
+.section3-box-price {
+  display: none;
+}
+.section3-title {
+  font-size: 20px;
+  color: var(--black);
+}
+.section3-desc {
+  line-height: 25px;
+  font-size: 15px;
+  margin: 10px;
+  width: 80%;
+  color: var(--gray);
+}
+
+/*                                                 section 4 */
+.section4 {
+  margin: 30px auto;
+}
+.section4 svg {
+  width: 100%;
+}
+.section4 h3 {
+  font-size: 25px;
+}
+.section4 p {
+  font-size: 18px;
+  line-height: 25px;
+  margin: 10px;
+}
+
+/*                                                 section 5 */
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 10px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+.section5 {
+  margin: 50px auto;
+  text-align: center;
+}
+.section5-titleBlog {
+  font-size: 35px;
+  font-weight: 900;
+  margin: 30px;
+}
+.section5-descriptions {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.section5-title {
+  color: var(--black);
+  font-size: 25px;
+  margin-top: 20px;
+}
+.section5-desc {
+  color: var(--gray);
+  font-size: 15px;
+  overflow: hidden;
+  margin-top: 10px;
+  line-height: 20px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.section5-btn {
+  margin: 10px 0 20px;
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
